@@ -1,24 +1,34 @@
-.mbtilayut {
-  width : 100vw;
+.mbtilayout {
+  width : 100%;
   font-size: 14px;
   display: flex;
   justify-content: center;
   background-color: #eee; 
   height: calc(var(--vh, 1vh)*100);
+  padding: 0px;
+  margin: 0;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+}
 
-.startPageLayout{
-  display : flex;
+.startPageLayout {
+  margin: 0;
+  display: flex;
   flex-direction: column;
-  align-items:center;
+  align-items: center;
   justify-content: center;
-  background-image: url('image/start_background.png');
-  width: 100%;
-  max-width: 900px; 
- height: 100%;
-  color: #413730
+  background-image: url('image/Group 25 (1).png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
+  color: #413730;
 }
+
 .startLogo{
   display: flex;
   flex-direction: column;
@@ -37,22 +47,72 @@
   border-radius: 50px;
 
 }
-
-.startLogo div:nth-child(2){
-
+.startmessage {
+  font-size: 100px;
+  font-weight: bold;
+  margin-bottom: 30px;
 }
 
+@media (max-width: 768px) {
+  /* 화면 너비가 768px 이하일 때 적용되는 스타일 */
+  .startmessage {
+    font-size: 60px;
+  }
+  
+}
 
-.startButton{}
+@media (max-width: 480px) {
+  /* 화면 너비가 480px 이하일 때 적용되는 스타일 */
+  .startmessage {
+    font-size: 40px;
+  }
+}
+.startButton {
+  position: fixed;
+  left: 50%;
+  bottom: 30px; /* 원하는 여백 값으로 조정 */
+  transform: translateX(-50%);
+  width: 350px;
+  height: 100px;
+  background: #FFE786;
+  box-shadow: inset -9px -9px 10px 3px rgba(0, 0, 0, 0.25);
+  border-radius: 180px;
+  border-color: #FFE786;
+  font-size: x-large;
+  margin-top: 25px;
+  z-index: 1;
+}
+@media (max-width: 768px) {
+  /* 화면 너비가 768px 이하일 때 적용되는 스타일 */
+  .startButton {
+    width: 250px;
+    height: 80px;
+    font-size: large;
+  }
+}
+
+@media (max-width: 480px) {
+  /* 화면 너비가 480px 이하일 때 적용되는 스타일 */
+  .startButton {
+    width: 200px;
+    height: 60px;
+    font-size: medium;
+  }
+}
+.창캐미1 {
+  size:30px;
+}
+
 
 .questionLayout{
   display: flex;
   flex-direction: column;
   background-color: #969696;
   width: 100%;
-  max-width: 900px;
+
   height:100vh;
   overflow:hidden;
+  
   
 }
 .mbtiTitle{
@@ -68,9 +128,10 @@
   display: flex;
   flex:1;
 }
+
 .questionList{
   flex-direction: column;
-  height: 100%;
+  height: 100vh;
   overflow: scroll;
   scrollbar-width:none;
 
@@ -94,9 +155,11 @@
 justify-content: flex-end;
   width: 100%;
   background-color: #fff;
-padding: 10px;
+padding: 5px;
 display:flex;
   flex-direction: column;
+  opacity: 0.8;
+  
 
  
   
@@ -181,7 +244,9 @@ display:flex;
     display: flex;
     height: 100px;
     justify-content: center;
-    margin: 0 20px 15px;
-    padding: 15px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
     text-align: center;
 }

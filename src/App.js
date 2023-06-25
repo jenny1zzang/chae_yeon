@@ -1,6 +1,10 @@
 import logo from "./logo.svg";
 import "./App.css";
 import { useEffect, useState } from "react";
+import QuestionComponent from "./ChatComponent";
+import 시작사진 from "./image/시작사진.png"
+
+
 
 function App() {
   const setVh = () => {
@@ -23,7 +27,7 @@ function App() {
       q: [
         "두근두근… 오늘은 드디어 CJ UNIT 에 들어와 첫 발대식 날이다.",
         "반가워요 UNIT 여러분~! 우선 모두 지정석에 앉아주세요. 각 자리엔 저희가 여러분께 선물로 드릴 웰컴키트가 놓여있습니다. 자유롭게 열어보세요",
-        ,
+        
         "아직 발대식 시작까지 시간이 조금 남았다. 시간이 남았을 때 나는?",
       ],
       a: [
@@ -116,6 +120,8 @@ function App() {
     },
   ];
 
+  
+
   const [mbtiList, setMbtiList] = useState([
     { name: "I", count: 0 },
     { name: "E", count: 0 },
@@ -135,13 +141,23 @@ function App() {
       }
     }
     setMbtiList(ls);
-    setPage(page + 1);
+    if (idx === 0 && (type === "I")){
+      setPage(page + 20)
+    }
+    else if (idx === 2 && (type === "I"))
+      setPage(page + 20)
+    
+    else {setPage(page + 1);}
 
     if (idx + 1 === questionList.length) {
       setMBTI();
     }
   };
   const [page, setPage] = useState(0);
+
+    const handleClickNext = () => {
+      setPage(page - 19);
+    };
 
   const [mbtiContents, setmbtiContents] = useState([]);
 
@@ -212,12 +228,27 @@ function App() {
   }
 
   return (
-    <div className="mbtilayut">
+    <div className="mbtilayout">
       {page === 0 ? (
         <div className="startPageLayout">
           <button onClick={() => setPage(1)} className="startButton">
             테스트 시작하기
           </button>
+        </div>
+      ) : page === 21 ? (
+        <div className="customPageLayout">
+          <div className="answerItemLayout">
+         첫번째 질문 조건페이지
+            
+          </div>
+          <button onClick={handleClickNext}>다음</button>
+        </div>
+      ) : page === 23 ? (
+        <div className="customPageLayout">
+          <div className="answerItemLayout">
+            세번째 질문 조건페이지
+          </div>
+          <button onClick={handleClickNext}>다음</button>
         </div>
       ) : page <= questionList.length ? (
         <div className="questionLayout">
@@ -230,16 +261,27 @@ function App() {
             {questionList.map((val, idx) => (
               <div
                 className="questionList"
-                style={{ display: page === idx + 1 ? "flex" : "none" }}
+                style={{
+                  display: page === idx + 1 ? "flex" : "none",
+                  backgroundImage: `url(${
+                    idx < 3 ? require("./image/발대식.png") : ""
+                  })`,
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
+                }}
                 key={idx}
               >
                 <div className="questionItemlayout">
                   <div className="chatListLayout">
-                    {val.q.map((qval, qidx) => (
-                      <div key={qidx} className="chatBox">
-                        <div></div> <div>{qval}</div>
+                    <div className="questionItemlayout">
+                      <div className="chatListLayout">
+                        {val.q.map((qval, qidx) => (
+                          <div key={qidx} className="chatBox">
+                            <div></div> <div>{qval}</div>
+                          </div>
+                        ))}
                       </div>
-                    ))}
+                    </div>
                   </div>
                 </div>
 
