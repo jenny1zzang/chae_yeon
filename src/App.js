@@ -249,6 +249,7 @@ function App() {
             세번째 질문 조건페이지
           </div>
           <button onClick={handleClickNext}>다음</button>
+          
         </div>
       ) : page <= questionList.length ? (
         <div className="questionLayout">
