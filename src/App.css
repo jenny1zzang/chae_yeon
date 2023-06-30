@@ -140,6 +140,8 @@ body {
   display: none;
 }
 
+
+
 .questionItemlayout {
   display: flex;
   flex:1;
@@ -265,3 +267,8 @@ display:flex;
     padding: 10px;
     text-align: center;
 }
+
+.firstlist{
+  background-color: #413730;
+}
+

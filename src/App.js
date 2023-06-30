@@ -537,6 +537,7 @@ function App() {
 
    const handleClickNext =
      page < 200 ? handleClickNextHund : handleClickNextTwoHund;
+    
 return (
   <div className="questionLayout">
     <div className="questionAnswerLayout">
@@ -719,13 +720,42 @@ return (
             {questionList.map((val, idx) => (
               <div
                 className="questionList"
+                
                 style={{
                   display: page === idx + 1 ? "flex" : "none",
                   backgroundImage: `url(${
-                    idx < 3 ? require("./image/발대식.png") : ""
+                    idx === 0 ? require("./image/발대식.png"):
+                    idx === 1 ? require("./image/발대식+담당자.png"):
+                    idx === 2 ? require("./image/발대식+가방.png"):
+                    idx < 5 ? require("./image/발대식.png"):
+                    idx === 5 ? require("./image/집+담당자.png") :
+                    idx === 6 ? require("./image/집+담당자흐림.png") :
+                    idx < 7 ? require("./image/집.png") :
+                    idx < 8 ? require("./image/비행기내부.png") : 
+                    idx < 10 ? require("./image/본사배경.png") :
+                    idx < 12 ? require("./image/본사+담당자.png") : 
+                    idx < 26 ? require("./image/본사배경.png") :
+                    idx === 26 ? require("./image/본사+고민.png") : 
+                    idx === 27 ? require("./image/본사+결심.png") : 
+                    idx === 28 ? require("./image/본사+결심흐림.png") :
+                    idx === 29 ? require("./image/본사배경.png") :
+                    idx < 32 ? require("./image/본사+팀원.png") : 
+                    idx === 32 ? require("./image/본사+팀원흐림.png") :
+                    idx === 33 ? require("./image/본사+담당자.png") :
+                    idx === 34 ? require("./image/본사+팀원2.png") :
+                    idx === 35 ? require("./image/본사+팀원2흐림.png") :
+                    idx === 36 ? require("./image/본사+담당자.png") :
+                    idx === 39 ? require("./image/본사흐림.png") :
+                    idx < 40 ? require("./image/본사배경.png") : 
+                    idx === 42 ? require("./image/집+문자.png") :
+                    idx < 44 ? require("./image/집.png") : 
+                    idx === 45 ? require("./image/본사+팀원.png") :
+                    idx < 47 ? require("./image/본사배경.png") : 
+                    idx < 51 ? require("./image/집+박사.png") :
+                    idx < 55 ? require("./image/집.png") : ""
                   })`,
                   backgroundSize: "cover",
-                  backgroundPosition: "center",
+                  backgroundPosition: "center"
                 }}
                 key={idx}
               >
@@ -758,6 +788,7 @@ return (
                 </div>
               </div>
             ))}
+
           </div>
         </div>
       ) : (
