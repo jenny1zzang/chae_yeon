@@ -537,6 +537,7 @@ function App() {
 
    const handleClickNext =
      page < 200 ? handleClickNextHund : handleClickNextTwoHund;
+    
 return (
   <div className="questionLayout">
     <div className="questionAnswerLayout">
@@ -586,7 +587,7 @@ return (
           </button>
         </div>
       ) :page === 103 ? (
-        <div>
+        <div className = "welcomekitLayout">
         <div>웰컴키트 사진들1</div>
         <button onClick={()=>{setPage(1103)}}>카드선택</button>
         <button onClick={()=>{setPage(104)}}>다음</button></div>
@@ -604,102 +605,119 @@ return (
         <div>이름표 카드 확대</div>
         <button onClick={()=>{setPage(104)}}>이전</button></div>
       ) : page === 205 ? (
-        
+        <div className = "firstQuestionLayout">
           <CustomPage question={"와~ 다른조지만 이렇게 인사하게 되니 너무 반갑네요 ! 같은 조로 활동은 못하겠지만, 종종 밥도 먹으며 한학기동안 우리만의 색을 찾아보아요 ~!"} answer={"질문"} />
+        </div>
       ) : page === 105 ? (
- 
-          <CustomPage question={"안녕하세요 ! 같은조로 만나게 되어서 너무 반갑네요 ㅎㅎ 한학기동안 우리만의 색을 찾아보아요 ~!"} 
-           />
+        <div className = "firstQuestionLayout">
+          <CustomPage question={"안녕하세요 ! 같은조로 만나게 되어서 너무 반갑네요 ㅎㅎ 한학기동안 우리만의 색을 찾아보아요 ~!"}/>
+          </div>
   
         
       ) : page === 107 ? (
-
+          <div className = "firstQuestionLayout">
           <CustomPage question={"학생들 전부랑 친해져야지~!~!"} />
+          </div>
 
       ) : page === 207 ? (
-
-          <CustomPage question={"그래 이 기회에 열심히 친해져야겠다!"} />
-
+        <div className = "firstQuestionLayout">
+        <CustomPage question={"그래 이 기회에 열심히 친해져야겠다!"} />
+        </div>
       ) : page === 108 ? (
-
+          <div className = "airplaneLayout">
           <CustomPage question={"이 영화 관심있게 봤었는데 비행기에서 봐야겠다!"} answer={"이건 뭐지(재민)"} />
+          </div>
      
       ) : page === 208 ? (
-   
+        <div className = "airplaneLayout">
           <CustomPage question={"여기서 비상구까지 거리가 꽤 되네.. 안내방송 열심히 들어야겠다.."} answer={"질문"} />
+          </div>
    
       ) : page === 114 ? (
-   
+        <div className="officeLayout">
           <CustomPage question={"그래도 여유있게 도착했다!   팀원들 커피사서 올라가야지~"} answer={"질문"} />
-        
+        </div>
       ) : page === 214 ? (
-    
+        <div className="officeLayout">
           <CustomPage question={"헉헉..아슬아슬하게 도착..! 뛰었더니 너무 힘드네.."} answer={"질문"} />
-       
+       </div>
       ) : page === 121 ? (
-       
+        <div className="officeLayout">
           <CustomPage question={"학생이 속상하지 않게 달래면서 오류를 찾아야지!"} answer={"질문"} />
+        </div>
        
       ) : page === 221 ? (
-       
+        <div className="officeLayout">
           <CustomPage question={"최대한 빠르게 오류를 찾자"} answer={"질문"} />
+        </div>
         
       ) : page === 129 ? (
-       
+        <div className = "office2Layout">
           <CustomPage question={"오호 그런 방법이 있구나! 그러면 재밌는 게임을 만들어서 학생들과 같이 해봐야겠다! 고마워>_<"} answer={"질문"} />
-       
+       </div>
       ) : page === 229 ? (
-    
+        <div className = "office2Layout">
           <CustomPage question={"오호 그런 방법이 있구나! 그럼 다음부터는 반장을 뽑아서 진행해봐야겠다! 고마워>_<"} answer={"질문"} />
-       
+       </div>
       ) : page === 133 ? (
-       
+        <div className="officeLayout">
           <CustomPage question={"대면으로 하는 날이 왔으면 좋겠다!"} answer={"질문"} />
+          </div>
         
       ) : page === 233 ? (
-        
+        <div className="officeLayout">
           <CustomPage question={"비대면 방법을 적극 활용하면 더 알차게 가르칠 수 있는 것 같아"} answer={"질문"} />
+          </div>
      
       ) : page === 136 ? (
-      
+        <div className="office3Layout">
           <CustomPage question={"대박! 소품 너무 귀여워>_<  우리 이거 사용해서 찍어보자!!!"} answer={"질문"} />
-        
+        </div>
       ) : page === 236 ? (
-        
+        <div className = "officeLayout">
           <CustomPage question={"방금 전에 찾아봤는데 이 포즈가 좋은 거 같아!"} answer={"질문"} />
+          </div>
         
       ) : page === 140 ? (
-          <CustomPage question={"휴 작성 다했다!"} answer={"질문"} />        
+        <div className = "officeLayout">
+          <CustomPage question={"휴 작성 다했다!"} answer={"질문"} />    
+          </div>    
       ) : page === 240 ? (
-      
+        <div className = "officeLayout">
           <CustomPage question={"내일 설마 잊어버리지는 않겠지?"} answer={"질문"} />
+          </div>
       
       ) : page === 144 ? (
-        
+        <div className = "homeLayout">
           <CustomPage question={"그래 학생들도 변화된 교육과정이 좋아할거야!"} answer={"질문"} />
+          </div>
         
       ) : page === 244 ? (
- 
+        <div className = "homeLayout">
           <CustomPage question={"변화를 주면 학생들이 이해하기 힘들 수 있을것 같아 기존의 수업방식으로 하자!"} answer={"질문"} />
+          </div>
         
       ) : page === 147 ? (
- 
+        <div className = "office4Layout">
           <CustomPage question={"생각해보니 조금 수정하면 좋겠다! 피드백 해줘서 고마워 ~"} answer={"질문"} />
-      
+        </div>
       ) : page === 247 ? (
-  
+        <div className = "office4Layout">
           <CustomPage question={"(커리큘럼에 대한 설명중 . . .) 이런 의도로 만들어왔어~  막상 설명하다보니 이부분을 조금 수정하면 좋을 것 같다! 다같이 조금 수정해보자 ~ "} answer={"질문"} />
-       
+        </div>
       ) : page === 155 ? (
-       
+          <div className="home2Layout">
           <CustomPage question={"지원 전부터 합격하면 해보고싶은 아이디어들이 마구마구 떠올랐는데, 이제 합격도 했으니 얼른 결과물로 만들.. 어? 또 생각났다! 메모해둬야지지"} answer={"질문"} />
+          </div>
       ) : page === 255 ? (
-
+        <div className="home3Layout">
           <CustomPage question={"다른 조원분들과는 친해질 기회가 없어서 아쉬웠는데 이번에 친해져서 좋다! 얼른 만나고싶어 >_<"} answer={"질문"} />
+          </div>
      
       ) : page === 256 ? (
-  
+        <div className="home4Layout">
           <CustomPage question={"원하던 활동이였지만, 걱정이 조금 앞서기도 해 ㅠㅠ... 그치만 멋진 UNIT 분들과 함께라면 뭐든 잘 해낼 수 있을거야 !"} answer={"질문"} />
+          </div>
       
       ) : page === 260 ? (
        
@@ -719,13 +737,55 @@ return (
             {questionList.map((val, idx) => (
               <div
                 className="questionList"
+                
                 style={{
                   display: page === idx + 1 ? "flex" : "none",
                   backgroundImage: `url(${
-                    idx < 3 ? require("./image/발대식.png") : ""
+                    idx === 0 ? require("./image/발대식.png"):
+                    idx === 1 ? require("./image/발대식+담당자.png"):
+                    idx === 2 ? require("./image/발대식+가방.png"):
+                    idx < 5 ? require("./image/발대식.png"):
+                    idx === 5 ? require("./image/발대식+담당자.png") :
+                    idx === 6 ? require("./image/발대식+담당자흐림.png") :
+                    idx < 8 ? require("./image/비행기내부.png") : 
+                    idx < 10 ? require("./image/본사배경.png") :
+                    idx < 12 ? require("./image/본사+담당자.png") :
+                    idx === 12 ? require("./image/집+결심.png") :
+                    idx === 13 ? require("./image/집+고민.png") :
+                    idx === 14 ? require("./image/본사+기쁜.png") :
+                    idx === 16 ? require("./image/본사+기쁜.png") :
+                    idx === 15 ? require("./image/본사배경.png") :
+                    idx === 18 ? require("./image/본사+창캐미.png") :
+                    idx === 21 ? require("./image/본사+깨달은창캐미.png") :
+                    idx === 23 ? require("./image/본사+창캐미.png") :
+                    idx === 24 ? require("./image/본사+기쁜.png") :
+                    idx < 25 ? require("./image/본사배경.png") :
+                    idx === 25 ? require("./image/본사+창캐미.png") :
+                    idx === 26 ? require("./image/본사+고민.png") : 
+                    idx === 27 ? require("./image/본사+결심.png") : 
+                    idx === 28 ? require("./image/본사+결심흐림.png") :
+                    idx === 29 ? require("./image/본사+기쁜.png") :
+                    idx < 32 ? require("./image/본사+팀원.png") : 
+                    idx === 32 ? require("./image/본사+팀원흐림.png") :
+                    idx === 33 ? require("./image/본사+담당자.png") :
+                    idx === 34 ? require("./image/본사+팀원2.png") :
+                    idx === 35 ? require("./image/본사+팀원2흐림.png") :
+                    idx === 36 ? require("./image/본사+담당자.png") :
+                    idx === 38 ? require("./image/본사+고민.png") :
+                    idx === 39 ? require("./image/본사+고민흐림.png") :
+                    idx < 40 ? require("./image/본사배경.png") : 
+                    idx === 42 ? require("./image/집+문자.png") :
+                    idx === 43 ? require("./image/집흐림.png") : 
+                    idx < 44 ? require("./image/집.png") : 
+                    idx === 45 ? require("./image/본사+팀원.png") :
+                    idx === 47 ? require("./image/집.png") :
+                    idx < 47 ? require("./image/본사배경.png") : 
+                    idx < 51 ? require("./image/집+박사.png") :
+                    idx === 53 ? require("./image/집+합격.png") :
+                    idx < 55 ? require("./image/집.png") : ""
                   })`,
                   backgroundSize: "cover",
-                  backgroundPosition: "center",
+                  backgroundPosition: "center"
                 }}
                 key={idx}
               >
@@ -758,6 +818,7 @@ return (
                 </div>
               </div>
             ))}
+
           </div>
         </div>
       ) : (
