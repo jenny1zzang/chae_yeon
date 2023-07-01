@@ -14,6 +14,22 @@ body {
   padding: 0;
 }
 
+.welcomekitLayout {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url('image/웰컴키트.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100vw;
+  height: auto;
+  color: #413730;
+}
+
+
 .startPageLayout {
   margin: 0;
   display: flex;
@@ -107,7 +123,7 @@ body {
 .questionLayout{
   display: flex;
   flex-direction: column;
-  background-color: #969696;
+  /* background-color: #969696; */
   width: 100%;
 
   height:100vh;
@@ -272,3 +288,92 @@ display:flex;
   background-color: #413730;
 }
 
+.firstQuestionLayout{
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url('image/발대식+창캐미.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100vw;
+  height: auto;
+  color: #413730;
+}
+
+.homeLayout{
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url('image/집.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100vw;
+  height: auto;
+  color: #413730;
+}
+
+.airplaneLayout{
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url('image/비행기내부.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100vw;
+  height: auto;
+  color: #413730;
+}
+
+.officeLayout{
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url('image/본사배경.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100vw;
+  height: auto;
+  color: #413730;
+}
+
+.office2Layout{
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url('image/본사+깨달은창캐미.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100vw;
+  height: auto;
+  color: #413730;
+}
+
+.office3Layout{
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url('image/본사+팀원.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100vw;
+  height: auto;
+  color: #413730;
+}

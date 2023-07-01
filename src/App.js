@@ -587,7 +587,7 @@ return (
           </button>
         </div>
       ) :page === 103 ? (
-        <div>
+        <div className = "welcomekitLayout">
         <div>웰컴키트 사진들1</div>
         <button onClick={()=>{setPage(1103)}}>카드선택</button>
         <button onClick={()=>{setPage(104)}}>다음</button></div>
@@ -605,75 +605,87 @@ return (
         <div>이름표 카드 확대</div>
         <button onClick={()=>{setPage(104)}}>이전</button></div>
       ) : page === 205 ? (
-        
+        <div className = "firstQuestionLayout">
           <CustomPage question={"와~ 다른조지만 이렇게 인사하게 되니 너무 반갑네요 ! 같은 조로 활동은 못하겠지만, 종종 밥도 먹으며 한학기동안 우리만의 색을 찾아보아요 ~!"} answer={"질문"} />
+        </div>
       ) : page === 105 ? (
- 
-          <CustomPage question={"안녕하세요 ! 같은조로 만나게 되어서 너무 반갑네요 ㅎㅎ 한학기동안 우리만의 색을 찾아보아요 ~!"} 
-           />
+        <div className = "firstQuestionLayout">
+          <CustomPage question={"안녕하세요 ! 같은조로 만나게 되어서 너무 반갑네요 ㅎㅎ 한학기동안 우리만의 색을 찾아보아요 ~!"}/>
+          </div>
   
         
       ) : page === 107 ? (
-
+          <div className = "homeLayout">
           <CustomPage question={"학생들 전부랑 친해져야지~!~!"} />
+          </div>
 
       ) : page === 207 ? (
-
-          <CustomPage question={"그래 이 기회에 열심히 친해져야겠다!"} />
-
+        <div className = "homeLayout">
+        <CustomPage question={"그래 이 기회에 열심히 친해져야겠다!"} />
+        </div>
       ) : page === 108 ? (
-
+          <div className = "airplaneLayout">
           <CustomPage question={"이 영화 관심있게 봤었는데 비행기에서 봐야겠다!"} answer={"이건 뭐지(재민)"} />
+          </div>
      
       ) : page === 208 ? (
-   
+        <div className = "airplaneLayout">
           <CustomPage question={"여기서 비상구까지 거리가 꽤 되네.. 안내방송 열심히 들어야겠다.."} answer={"질문"} />
+          </div>
    
       ) : page === 114 ? (
-   
+        <div className="officeLayout">
           <CustomPage question={"그래도 여유있게 도착했다!   팀원들 커피사서 올라가야지~"} answer={"질문"} />
-        
+        </div>
       ) : page === 214 ? (
-    
+        <div className="officeLayout">
           <CustomPage question={"헉헉..아슬아슬하게 도착..! 뛰었더니 너무 힘드네.."} answer={"질문"} />
-       
+       </div>
       ) : page === 121 ? (
-       
+        <div className="officeLayout">
           <CustomPage question={"학생이 속상하지 않게 달래면서 오류를 찾아야지!"} answer={"질문"} />
+        </div>
        
       ) : page === 221 ? (
-       
+        <div className="officeLayout">
           <CustomPage question={"최대한 빠르게 오류를 찾자"} answer={"질문"} />
+        </div>
         
       ) : page === 129 ? (
-       
+        <div className = "office2Layout">
           <CustomPage question={"오호 그런 방법이 있구나! 그러면 재밌는 게임을 만들어서 학생들과 같이 해봐야겠다! 고마워>_<"} answer={"질문"} />
-       
+       </div>
       ) : page === 229 ? (
-    
+        <div className = "office2Layout">
           <CustomPage question={"오호 그런 방법이 있구나! 그럼 다음부터는 반장을 뽑아서 진행해봐야겠다! 고마워>_<"} answer={"질문"} />
-       
+       </div>
       ) : page === 133 ? (
-       
+        <div className="officeLayout">
           <CustomPage question={"대면으로 하는 날이 왔으면 좋겠다!"} answer={"질문"} />
+          </div>
         
       ) : page === 233 ? (
-        
+        <div className="officeLayout">
           <CustomPage question={"비대면 방법을 적극 활용하면 더 알차게 가르칠 수 있는 것 같아"} answer={"질문"} />
+          </div>
      
       ) : page === 136 ? (
-      
+        <div className="office3Layout">
           <CustomPage question={"대박! 소품 너무 귀여워>_<  우리 이거 사용해서 찍어보자!!!"} answer={"질문"} />
-        
+        </div>
       ) : page === 236 ? (
-        
+        <div className = "officeLayout">
           <CustomPage question={"방금 전에 찾아봤는데 이 포즈가 좋은 거 같아!"} answer={"질문"} />
+          </div>
         
       ) : page === 140 ? (
-          <CustomPage question={"휴 작성 다했다!"} answer={"질문"} />        
+        <div className = "officeLayout">
+          <CustomPage question={"휴 작성 다했다!"} answer={"질문"} />    
+          </div>    
       ) : page === 240 ? (
-      
+        <div className = "officeLayout">
           <CustomPage question={"내일 설마 잊어버리지는 않겠지?"} answer={"질문"} />
+          </div>
       
       ) : page === 144 ? (
         
