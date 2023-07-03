@@ -32,7 +32,7 @@ function App() {
       ],
     },
     {
-      q: [ "반가워요 UNIT 여러분~! 우선 모두 지정석에 앉아주세요. 각 자리엔 저희가 여러분께 선물로 드릴 웰컴키트가 놓여있습니다. 자유롭게 열어보세요" ],
+      q: [ "반가워요 UNIT 여러분~! 우선 모두 지정석에 앉아주세요. \n 각 자리엔 저희가 여러분께 선물로 드릴 웰컴키트가 놓여있습니다. 자유롭게 열어보세요" ],
       p: ["담당자님"],
       a: [
         { text: "다음" },
@@ -794,8 +794,8 @@ return (
                     <div className="questionItemlayout">
                       <div className="chatListLayout">
                         {val.q.map((qval, qidx) => (
-                          <div key={qidx} className="chatBox">
-                            <div></div> <div>{qval} </div>
+                          <div key={qidx} className="rectangle1">
+                            <div></div> <div className="text">{qval} </div>
                           </div>
                         ))}
                       </div>
