@@ -203,7 +203,7 @@ body {
 
 
 .answerItemLayout {
-
+  display: flex;
   justify-content: flex-end;
   display:flex;
   flex-direction: column;
