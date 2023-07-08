@@ -974,12 +974,13 @@ return (
                     mbtiContents.mbti === "ENTJ" ? require("./image/6black.png") :
                     mbtiContents.mbti === "ISTJ" ? require("./image/5wite.png") : ""
                   })`,
+                  backgroundRepeat: "no-repeat",
                   backgroundColor: "white",
                   width: "25vw",
                   height: "68vh",
                   textAlign: "center",
                   borderRadius: "20px",
-                  backgroundSize: "cover"
+                  backgroundSize: "contain"
                 }}>
               </div>
               <div
