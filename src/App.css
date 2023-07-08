@@ -544,3 +544,39 @@ body {
   height: auto;
   color: #413730;
 }
+
+.resultLayout{
+  width: 100%;
+  background-image: url('./image/start_background.png');
+  background-size: cover;
+}
+
+.resultContainer{
+  width: 80%;
+  transform: translate(15%, 5%);
+}
+
+.resultDetail{
+  margin-top: 2%;
+  margin-bottom: 2%;
+  margin-left: 5%;
+  margin-right: 5%;
+  font-size: 18px;
+}
+
+.titleWrapper{
+  margin-bottom: 20px;
+  background-color: white;
+  width: 75vw;
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.buttonWrapper{
+  background-color: white;
+  width: 75vw;
+  text-align: center;
+  border-radius: 20px;
+}
