@@ -501,22 +501,86 @@ function App() {
 
   function setMBTI() {
     let mc = [
-      { mbti: "ENTP", contents: ["설명1", "설명2", "설명3"] },
-      { mbti: "INTP", contents: ["설명1", "설명2", "설명3"] },
-      { mbti: "ESFJ", contents: ["설명1", "설명2", "설명3"] },
-      { mbti: "ESTP", contents: ["설명1", "설명2", "설명3"] },
-      { mbti: "ISFJ", contents: ["설명1", "설명2", "설명3"] },
-      { mbti: "ISTP", contents: ["설명1", "설명2", "설명3"] },
-      { mbti: "ENFJ", contents: ["설명1", "설명2", "설명3"] },
-      { mbti: "INFJ", contents: ["설명1", "설명2", "설명3"] },
-      { mbti: "ENTJ", contents: ["설명1", "설명2", "설명3"] },
-      { mbti: "INTJ", contents: ["설명1", "설명2", "설명3"] },
-      { mbti: "ENFP", contents: ["설명1", "설명2", "설명3"] },
-      { mbti: "INFP", contents: ["설명1", "설명2", "설명3"] },
-      { mbti: "ESFP", contents: ["설명1", "설명2", "설명3"] },
-      { mbti: "ISFP", contents: ["설명1", "설명2", "설명3"] },
-      { mbti: "ESTJ", contents: ["설명1", "설명2", "설명3"] },
-      { mbti: "ISTJ", contents: ["설명1", "설명2", "설명3"] },
+      { mbti: "ENTP", resultColor: "#881824", contents: ["WINE RED", 
+                                  "당신은 CJ SW창의캠프 활동을 통해 유닛 홍보왕상과 와인빛 레드 색상을 얻게 되었습니다!",
+                                  "유닛 홍보왕상은 누구보다 적극적으로 CJ UNIT을 알리는 사람에게 수여하는 상입니다.",
+                                  "유닛 홍보왕상을 받은 당신은 장화 신은 재간꾼 고양이 같은 사람입니다!",
+                                  "또 와인빛 레드 색상처럼 박학다식하고 독창적이며 새로운 시도를 추구하는 당신은 유닛에 꼭 필요한 색입니다." ] },
+      { mbti: "INTP", resultColor: "#BFC7D6", contents: ["ARTIC ICE", 
+                                  "당신은 CJ SW창의캠프 활동을 통해 유닛 창의상과 아르틱 아이스 색상을 얻게 되었습니다!",
+                                  "유닛 창의상은 유닛의 여러 팀 회의에서 뛰어난 아이디어로 창의캠프 활동에 도움이 되는 사람에게 수여하는 상입니다.",
+                                  "유닛 창의상을 받은 당신은 호기심 많은 셜록홈즈 같은 사람입니다!",
+                                  "또 아르틱 아이스 색상처럼 지적 호기심이 뛰어나고 잠재력과 가능성을 중요하게 생각하는 당신은 유닛에 꼭 필요한 색입니다." ] },
+      { mbti: "ESFJ", resultColor: "#5DC198", contents: ["EMERALD BLUE", 
+                                  "당신은 CJ SW창의캠프 활동을 통해 긍정 에너지상과 에메랄드 블루 색상을 얻게 되었습니다!", 
+                                  "긍정 에너지상은 학생들과 팀원들 모두에게 해피 바이러스를 전파하는 사람에게 수여하는 상입니다.",
+                                  "긍정 에너지상을 받은 당신은 아낌없이 주는 나무 같은 사람입니다!",
+                                  "또 에메랄드 블루 색상처럼 타인들에게 관심이 많고 친절하며 동정심이 많은 당신은 유닛에 꼭 필요한 색입니다."] },
+      { mbti: "ESTP", resultColor: "#FFA500", contents: ["ORANGE", 
+                                  "당신은 CJ SW창의캠프 활동을 통해 STEAM인재상과 오렌지 색상을 얻게 되었습니다!",
+                                  "STEAM인재상은 분야를 가리지 않고 어느 분야에서든 두각을 드러내는 사람에게 수여하는 상입니다.",
+                                  "STEAM인재상을 받은 당신은 예측불가 말괄량이 삐삐 같은 사람입니다!",
+                                  "또 오렌지 색상처럼 관용적이고 타협을 잘하며 현실적인 문제 해결에 능숙한 당신은 유닛에 꼭 필요한 색입니다." ] },
+      { mbti: "ISFJ", resultColor: "#440088", contents: ["INDIGO", 
+                                  "당신은 CJ SW창의캠프 활동을 통해 우수멘토상과 인디고 색상을 얻게 되었습니다!",
+                                  "우수멘토상은 학생들의 마음을 잘 헤아려주며 훌륭한 수업을 한 사람에게 수여하는 상입니다.",
+                                  "우수멘토상을 받은 당신은 주어진 역할을 수행하는 토이스토리 우디 같은 사람입니다!",
+                                  "또 인디고 생상처럼 차분하고 헌식적이며 타인의 감정변화를 잘 파악하는 당신은 유닛에 꼭 필요한 색입니다."] },
+      { mbti: "ISTP", resultColor: "#8E918F", contents: ["NEUTRAL GRAY", 
+                                  "당신은 CJ SW창의캠프 활동을 통해 레고 조립상과 뉴트럴 그레이 색상을 얻게 되었습니다!",
+                                  "레고조립상은 뛰어난 창의력으로 뚝딱뚝딱 멋진 레고를 조립하는 사람에게 수여하는 상입니다.",
+                                  "레고조립상을 받은 당신은 냉정한 제임스본드 같은 사람입니다!",
+                                  "또 뉴트럴 그레이 색상처럼 꽂히는 것이 있다면 무조건 실행하며 분석력이 뛰어난 당신은 유닛에 꼭 필요한 색입니다."] },
+      { mbti: "ENFJ", resultColor: "#F5E7C8", contents: ["VANILLA", 
+                                  "당신은 CJ SW창의캠프 활동을 통해 유닛 다채롭상과 바닐라 색상을 얻게 되었습니다!",
+                                  "유닛 다채롭상은 어느 누구에게나 친절하고 찰떡궁합인 사람에게 수여하는 상입니다.",
+                                  "유닛 다채롭상을 받은 당신은 순둥순둥한 리트리버 같은 사람입니다!",
+                                  "또 바닐라 색상처럼 사교적이고 타인의 의견을 존중할 줄 아는 당신은 유닛에 꼭 필요한 색입니다."] },
+      { mbti: "INFJ", resultColor: "#FFDF00", contents: ["GOLD", 
+                                  "당신은 CJ SW창의캠프 활동을 통해 유닛 계획상과 골드 색상을 얻게 되었습니다!",
+                                  "유닛 계획상은 유닛 일정을 잘 계획하고 정리하여 차질 없이 봉사 활동을 마무리하게 해준 사람에게 수여하는 상입니다.",
+                                  "유닛 계획상을 받은 당신은 다정한 어린왕자 같은 사람입니다!",
+                                  "또 골드 색상처럼 뛰어난 통찰력으로 사람들에게 영감을 주고 공동체의 이익을 중요하게 생각하는 당신은 유닛에 꼭 필요한 색입니다."] },
+      { mbti: "ENTJ", resultColor: "#000000", contents: ["BLACK", 
+                                  "당신은 CJ SW창의캠프 활동을 통해 우수 커리큘럼상과 블랙 색상을 얻게 되었습니다!", 
+                                  "우수 커리큘럼상은 뛰어난 분석력으로 다음 기수를 위한 훌륭한 커리큘럼을 제작한 사람에게 수여하는 상입니다.",
+                                  "우수 커리큘럼상을 받은 당신은 전략적인 제갈량 같은 사람입니다!",
+                                  "또 블랙 색상처럼 준비성이 철저하고 활동적이며 통솔력을 겸비한 당신은 유닛에 꼭 필요한 색입니다."] },
+      { mbti: "INTJ", resultColor: "#FFE885", contents: ["MAJERELLE BLUE", 
+                                  "당신은 CJ SW창의캠프 활동을 통해 블록 코딩상과 마조렐 블루 색상을 얻게 되었습니다!", 
+                                  "블록코딩상은 뛰어난 집중력으로 코드를 짜서 조립한 레고를 잘 작동시키는 사람에게 수여하는 상입니다.",
+                                  "블록 코딩상을 받은 당신은 자기 확신이 뛰어난 엘사 같은 사람입니다!",
+                                  "또 마조렐 블루 색상처럼 목표 의식이 강하고 분석력이 뛰어나며 지적 카리스마가 있는 당신은 유닛에 꼭 필요한 색입니다."] },
+      { mbti: "ENFP", resultColor: "#FFC0CB", contents: ["PINK", 
+                                  "당신은 CJ SW창의캠프 활동을 통해 유닛 포토제닉상과 핑크 색상을 얻게 되었습니다!",
+                                  "유닛 포토제닉상은 활동을 마무리하는 단체사진에서 제일 자신감 넘치게 사진 포즈를 취하는 사람에게 수여하는 상입니다.",
+                                  "유닛 포토제닉상을 받은 당신은 화려하게 만개한 벚꽃같은 사람입니다!",
+                                  "또 핑크 색상처럼 상상력이 풍부하고 순발력이 뛰어나며 공감이 풍부한 당신은 유닛에 꼭 필요한 색입니다."] },
+      { mbti: "INFP", resultColor: "#BF94E4", contents: ["LAVENDAR",
+                                  "당신은 CJ SW창의캠프 활동을 통해 유닛 친절상과 라벤더 색상을 얻게 되었습니다!",
+                                  "유닛 친절상은 수업 시작부터 끝까지 항상 웃음 가득, 친절한 사람에게 수여하는 상입니다.",
+                                  "유닛 친절상을 받은 당신은 보기만해도 귀여운 메타몽 같은 사람입니다!",
+                                  "또 라벤더 색상처럼 성실하고 이해심이 많으며 희생할 줄 아는 당신은 유닛에 꼭 필요한 색입니다."] },
+      { mbti: "ESFP", resultColor: "#FFDF00", contents: ["LIGHT SKYBLUE",
+                                  "당신은 CJ SW창의캠프 활동을 통해 유닛 케미상과 라이트 스카이 블루 색상을 얻게 되었습니다!",
+                                  "유닛 케미상은 학생들과 팀원 모두에게 최고의 케미를 보여주는 사람에게 수여하는 상입니다.",
+                                  "유닛 케미상을 받은 당신은 흥많은 춤추는 돌고래 같은 사람입니다!",
+                                  "또 라이트 스카이 블루 색상처럼 호기심이 많으며 분위기 메이커이자 재치있는 당신은 유닛에 꼭 필요한 색입니다."] },
+      { mbti: "ISFP", resultColor: "#BB264A", contents: ["VIVA MAGENTA",
+                                  "당신은 CJ SW창의캠프 활동을 통해 유닛 배려상과 비바 마젠타 색상을 얻게 되었습니다!",
+                                  "유닛 배려상은 겸손한 마음으로 상대방을 배려하여 유닛 참여자들에게 도움이 되는 사람에게 수여하는 상입니다.",
+                                  "유닛 배려상을 받은 당신은 부드럽고 따스한 장미 같은 사람입니다!",
+                                  "또 비바 마젠타 색상처럼 온화하고 검소하며 삶의 여유를 중요하게 생각하는 당신은 유닛에 꼭 필요한 색입니다."] },
+      { mbti: "ESTJ", resultColor: "#AA7942", contents: ["BROWN",
+                                  "당신은 CJ SW창의캠프 활동을 통해 유닛 분신술상과 브라운 색상을 얻게 되었습니다!",
+                                  "유닛 분신술상은 다양한 TF에 참여 하여 본인의 기량을 여러방면에서 뽐내는 사람에게 수여하는 상입니다.",
+                                  "유닛 분신술상을 받은 당신은 부지런한 다람쥐 같은 사람입니다!",
+                                  "또 브라운 색상처럼 체계적이고 규칙을 준수할 줄 알며 현실적인 목표 설정에 유능한 당신은 유닛에 꼭 필요한 색입니다."] },
+      { mbti: "ISTJ", resultColor: "#FFFFFF", contents: ["WHITE",
+                                  "당신은 CJ SW창의캠프 활동을 통해 근면성실상과 화이트 색상을 얻게 되었습니다!",
+                                  "근면성실상은 네 달이라는 봉사 기간 동안 꾸준하게 활동에 참여한 사람에게 수여하는 상입니다.",
+                                  "근면성실상을 받은 당신은 청렴결백한 고귀한 목련 같은 사람입니다!",
+                                  "또 화이트 색상처럼 책임감이 강하고 매사에 철저하며 어떤 일이든 꾸준히 해내는 당신은 유닛에 꼭 필요한 색입니다."] },
     ];
 
     let IorE =
@@ -881,40 +945,74 @@ return (
           </div>
         </div>
       ) : (
-        <div className="questionLayout">
-          <div className="mbtiTitle">
-            <div>MBTI TEST</div>
-            <button onClick={() => setPage(page-1)} className="returnButton">
-              뒤로가기
-            </button>
-            <div onClick={() => window.location.reload()}>다시하기</div>
-          </div>
-
-          <div>
-            <div className="questionList" style={{ display: "flex" }}>
-              <div className="questionItemlayout">
-                <div className="chatListLayout">
-                  <div className="chatBox">
-                    <div></div>
-                    <div>당신의 mbti는 {mbtiContents.mbti} 입니다.</div>
+        <div className="resultLayout">
+          <div className="resultContainer">
+            <div className="titleWrapper">
+                <span style={{color:"red"}}>FIND </span>
+                <span style={{color:"orange"}}>YOUR </span>
+                <span style={{color:"blue"}}>COLOR</span>
+            </div>
+            
+            <div style={{ display: "flex", marginBottom: 20}}>
+              <div
+                style={{
+                  backgroundImage: `url(${
+                    mbtiContents.mbti === "INTP" ? require("./image/14articice.png") :
+                    mbtiContents.mbti === "ISFJ" ? require("./image/17indigo.png") :
+                    mbtiContents.mbti === "INFJ" ? require("./image/4gold.png") :
+                    mbtiContents.mbti === "INTJ" ? require("./image/16majerelleblue.png") :
+                    mbtiContents.mbti === "ISTP" ? require("./image/13neutralgray.png") :
+                    mbtiContents.mbti === "ISFP" ? require("./image/8vivamagenta.png") :
+                    mbtiContents.mbti === "INFP" ? require("./image/10lavender.png") :
+                    mbtiContents.mbti === "ESTP" ? require("./image/9orange.png") :
+                    mbtiContents.mbti === "ESFP" ? require("./image/15lightskyblue.png") :
+                    mbtiContents.mbti === "ENFP" ? require("./image/11pink.png") :
+                    mbtiContents.mbti === "ENTP" ? require("./image/7winered.png") :
+                    mbtiContents.mbti === "ESTJ" ? require("./image/3brown.png") :
+                    mbtiContents.mbti === "ESFJ" ? require("./image/2emeraldblue.png") :
+                    mbtiContents.mbti === "ENFJ" ? require("./image/12vanilla.png") :
+                    mbtiContents.mbti === "ENTJ" ? require("./image/6black.png") :
+                    mbtiContents.mbti === "ISTJ" ? require("./image/5wite.png") : ""
+                  })`,
+                  backgroundColor: "white",
+                  width: "25vw",
+                  height: "68vh",
+                  textAlign: "center",
+                  borderRadius: "20px",
+                  backgroundSize: "cover"
+                }}>
+              </div>
+              <div
+                style={{
+                  position: "relative",
+                  marginLeft: 25,
+                  backgroundColor: "white",
+                  width:"48vw",
+                  borderRadius: "20px"
+              }}>
+                {mbtiContents.contents.map((val, idx) => (
+                  idx === 0 ? 
+                  <div style={{fontSize:"30px", fontWeight:"bold", textAlign:"center", margin: 20}}>
+                    <span>YOUR COLOR IS </span>
+                    <span style={{color: mbtiContents.resultColor, textShadow:"2px 2px 2px gray"}}>{mbtiContents.contents[0]}</span>
+                    
+                  </div> : 
+                  <div className="resultDetail" key={idx}>
+                    {val}
                   </div>
-
-                  <div className="chatBox">
-                    <div></div>
-                    <div>{mbtiContents.mbti} 는</div>
-                  </div>
-
-                  {mbtiContents.contents.map((val, idx) => (
-                    <div className="chatBox" key={idx}>
-                      <div></div>
-                      <div>{val}</div>
-                    </div>
-                  ))}
-                </div>
+                ))}
+                <div className="resultDetail">여러분 덕분에 CJ SW창의캠프를 성공적으로 마무리 할 수 있었습니다.</div>
+                <div className="resultDetail">수고하셨습니다 유닛 여러분!</div>
+                <div className="resultDetail" style={{position: "absolute", bottom: "10px", right: "10px"}}>CJ 올리브네트웍스 드림</div>
+              </div>
+            </div>
+              <div className="buttonWrapper">
+                  <button style={{margin: 10}} onClick={() => window.location.reload()}>다시 검사하기</button>
+                  <button style={{margin: 10}}>다른 색상보기</button>
+                  <button style={{margin: 10}}>공유하기</button>
               </div>
             </div>
           </div>
-        </div>
       )}
     </div>
   );
