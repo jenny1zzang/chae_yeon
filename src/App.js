@@ -985,19 +985,20 @@ return (
               >
                 <div className="questionItemlayout">
                   {page !== 1 && (
-                  <div className="answerItemLayout">
-                    {val.a.map((aval, aidx) => (
-                      <div
-                        key={aidx}
-                        className="answerBox"
-                        onClick={() => handleCkAnswer(aval.type, idx)}
-                      >
-                        {" "}
-                        {aval.type}
-                        {aval.text}
-                      </div>
-                    ))}
-                  </div>)}
+                    <div className="answerItemLayout">
+                      {val.a.map((aval, aidx) => (
+                        <div
+                          key={aidx}
+                          className="answerBox"
+                          onClick={() => handleCkAnswer(aval.type, idx)}
+                        >
+                          {" "}
+                          {aval.type}
+                          {aval.text}
+                        </div>
+                      ))}
+                    </div>
+                  )}
                   <div className="personListLayout">
                     {val.p.map((pval, pidx) => (
                       <div key={pidx} className="personBox">
@@ -1005,22 +1006,22 @@ return (
                       </div>
                     ))}
                   </div>
-           
-                    <div
 
-                      onClick={() => {
-                        if (page === 1) {
-                          setPage(page + 1);
-                        }
-                      }}
-                    >
-              <div className="chaeyeon">
-                        {val.q.map((qval, qidx) => (
-                          <div key={qidx} className="rectangle1">
-                            <div></div> <div className="text">{qval} </div>
-                          </div>
-                        ))}
-               </div>
+                  <div
+                    onClick={() => {
+                      if (page === 1) {
+                        setPage(page + 1);
+                      }
+                    }}
+                  >
+                    <div className="chaeyeon">
+                      {val.q.map((qval, qidx) => (
+                        <div key={qidx} className="rectangle1">
+                          <div></div> <div className="text">{qval} </div>
+                          {page === 1 && <div className="next">다음 ▶</div>}
+                        </div>
+                      ))}
+                    </div>
                   </div>
                 </div>
               </div>
