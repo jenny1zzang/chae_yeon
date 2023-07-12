@@ -638,7 +638,7 @@ return (
                         page === 107 ||
                         page === 108 ||
                         page === 114 ||
-                        page === 121 ||
+                  
                         page === 133 ||
                         page === 136 ||
                         page === 140 ||
@@ -647,9 +647,9 @@ return (
                         page === 155
                       ) {
                         setPage(page - 99);
-                      } else if (page === 221 || page === 129) {
+                      } else if (page === 221 || page === 129 || page === page === 121) {
                         setPage(page - 97);
-                      }
+                      } 
                     }}
                     className="next"
                   >
@@ -1094,6 +1094,7 @@ return (
                     page === 9 ||
                     page === 15 ||
                     page === 18 ||
+                  
                     page === 24 ||
                     page === 25 ||
                     page === 26 ||
