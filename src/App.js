@@ -647,7 +647,7 @@ return (
                         page === 155
                       ) {
                         setPage(page - 99);
-                      } else if (page === 221 || page === 129 || page === page === 121) {
+                      } else if (page === 221 || page === 129 || page === 121) {
                         setPage(page - 97);
                       } 
                     }}
