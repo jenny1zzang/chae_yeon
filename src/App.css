@@ -601,7 +601,20 @@ body {
   border-radius: 20px;
 }
 
-.rresultContainer{
-  width: 100%;
-  transform: translate(12%, 55%);
+.resultPageButton {
+  font-family: 'Jua', sans-serif;
+  margin: 1% 2% 1% 2%;
+  width: 150px;
+  height: 40px;
+  background: #FFE786;
+  box-shadow: inset -6px -6px 10px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 180px;
+  border: none;
+  border-color: #FFE786;
+  font-size: large;
+}
+
+.rresultContainer{ 
+  width: 80%; 
+  transform: translate(15%, 50%); 
 }

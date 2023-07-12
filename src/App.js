@@ -890,7 +890,7 @@ function App() {
           ></div>
           <div className="rresultContainer">
             <div className="buttonWrapper">
-              <button style={{ margin: 10 }} onClick={() => setPage(56)}>
+              <button className="resultPageButton" onClick={() => setPage(56)}>
                 뒤로가기
               </button>
             </div>
@@ -1387,20 +1387,21 @@ function App() {
                   })`,
                   backgroundRepeat: "no-repeat",
                   backgroundColor: "white",
-                  width: "25vw",
-                  height: "68vh",
+                  width: "24vw",
+                  height: "66vh",
                   textAlign: "center",
                   borderRadius: "20px",
-                  backgroundSize: "contain",
+                  backgroundSize: "contain"
                 }}
-              ></div>
+              >
+              </div>
               <div
                 style={{
                   position: "relative",
-                  marginLeft: 25,
+                  marginLeft: "2vw",
                   backgroundColor: "white",
-                  width: "48vw",
-                  borderRadius: "20px",
+                  width:"49vw",
+                  borderRadius: "20px"
                 }}
               >
                 {mbtiContents.contents.map((val, idx) =>
@@ -1448,15 +1449,15 @@ function App() {
             </div>
             <div className="buttonWrapper">
               <button
-                style={{ margin: 10 }}
+                className="resultPageButton"
                 onClick={() => window.location.reload()}
               >
                 다시 검사하기
               </button>
-              <button style={{ margin: 10 }} onClick={() => setPage(100)}>
+              <button className="resultPageButton" onClick={() => setPage(100)}>
                 다른 색상보기
               </button>
-              <button style={{ margin: 10 }}>공유하기</button>
+              <button className="resultPageButton">공유하기</button>
             </div>
           </div>
         </div>
