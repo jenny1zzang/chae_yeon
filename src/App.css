@@ -1,5 +1,5 @@
 
-  @import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Jua&family=IBM+Plex+Sans+KR:wght@500&display=swap');
 
 
 .mbtilayout {
@@ -577,6 +577,7 @@ body {
 }
 
 .resultDetail{
+  font-family: 'IBM Plex Sans KR', sans-serif;
   margin-top: 2%;
   margin-bottom: 2%;
   margin-left: 5%;
