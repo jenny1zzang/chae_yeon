@@ -24,7 +24,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image: url('image/웰컴키트.png');
+  background-image: url('image/웰컴키트사진.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -96,6 +96,24 @@ body {
   transform: translateX(-50%);
   width: 300px;
   height: 90px;
+  background: #FFE786;
+  box-shadow: inset -6px -6px 10px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 180px;
+  border: none;
+  border-color: #FFE786;
+  font-size: x-large;
+  font-weight: 1000;
+  color: white;
+}
+.welcomeButton {
+  font-family: 'Jua', sans-serif;
+  position: fixed;
+  top: 47%;
+  left: 50%;
+  bottom: 50px;
+  transform: translateX(-50%);
+  width: 200px;
+  height: 60px;
   background: #FFE786;
   box-shadow: inset -6px -6px 10px 2px rgba(0, 0, 0, 0.25);
   border-radius: 180px;
@@ -579,4 +597,9 @@ body {
   width: 75vw;
   text-align: center;
   border-radius: 20px;
+}
+
+.rresultContainer{
+  width: 100%;
+  transform: translate(12%, 55%);
 }
