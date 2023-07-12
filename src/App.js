@@ -672,7 +672,7 @@ return (
                 <div>
                   {question} {page}
                 </div>
-                <div
+                <divg
                   onClick={() => {
                     if (
                       page === 205 ||
@@ -694,7 +694,7 @@ return (
                   className="next"
                 >
                   다음 ▶
-                </div>
+                </divg>
               </div>
               <div className="personListLayout">
                 <div className="personBox">
