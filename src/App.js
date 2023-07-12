@@ -775,36 +775,34 @@ function App() {
             {page < 200 ? (
               <div className="questionItemlayout">
                 <div className="chatListLayout">
-                  <div className="rectangle2">
+                  <div
+                    onClick={() => {
+                      if (
+                        page === 103 ||
+                        page === 105 ||
+                        page === 107 ||
+                        page === 108 ||
+                        page === 114 ||
+                        page === 133 ||
+                        page === 136 ||
+                        page === 140 ||
+                        page === 144 ||
+                        page === 147 ||
+                        page === 155
+                      ) {
+                        setPage(page - 99);
+                      } else if (page === 221 || page === 129 || page === 121) {
+                        setPage(page - 97);
+                      }
+                    }}
+                    className="rectangle2"
+                  >
                     <div></div>
                     <div>
                       {question} {page}
                     </div>
 
-                    <div
-                      onClick={() => {
-                        if (
-                          page === 103 ||
-                          page === 105 ||
-                          page === 107 ||
-                          page === 108 ||
-                          page === 114 ||
-                          page === 133 ||
-                          page === 136 ||
-                          page === 140 ||
-                          page === 144 ||
-                          page === 147 ||
-                          page === 155
-                        ) {
-                          setPage(page - 99);
-                        } else if (page === 221 || page === 129 || page === 121) {
-                          setPage(page - 97);
-                        }
-                      }}
-                      className="next"
-                    >
-                      다음 ▶
-                    </div>
+                    <div className="next">다음 ▶</div>
                   </div>
                   <div className="personListLayout">
                     <div className="personBox">
@@ -816,34 +814,32 @@ function App() {
             ) : (
               <div className="questionItemlayout">
                 <div className="chatListLayout">
-                  <div className="rectangle2">
+                  <div
+                    className="rectangle2"
+                    onClick={() => {
+                      if (
+                        page === 205 ||
+                        page === 207 ||
+                        page === 208 ||
+                        page === 214 ||
+                        page === 233 ||
+                        page === 236 ||
+                        page === 240 ||
+                        page === 244 ||
+                        page === 247 ||
+                        page === 255
+                      ) {
+                        setPage(page - 199);
+                      } else if (page === 221 || page === 229) {
+                        setPage(page - 197);
+                      }
+                    }}
+                  >
                     <div></div>
                     <div>
                       {question} {page}
                     </div>
-                    <div
-                      onClick={() => {
-                        if (
-                          page === 205 ||
-                          page === 207 ||
-                          page === 208 ||
-                          page === 214 ||
-                          page === 233 ||
-                          page === 236 ||
-                          page === 240 ||
-                          page === 244 ||
-                          page === 247 ||
-                          page === 255
-                        ) {
-                          setPage(page - 199);
-                        } else if (page === 221 || page === 229) {
-                          setPage(page - 197);
-                        }
-                      }}
-                      className="next"
-                    >
-                      다음 ▶
-                    </div>
+                    <div className="next">다음 ▶</div>
                   </div>
                   <div className="personListLayout">
                     <div className="personBox">
