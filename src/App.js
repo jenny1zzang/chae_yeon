@@ -837,7 +837,7 @@ function App() {
                   >
                     <div></div>
                     <div>
-                      {question} {page}
+                      {question}
                     </div>
                     <div className="next">다음 ▶</div>
                   </div>
@@ -1102,13 +1102,6 @@ function App() {
         <CustomPage question={"세번째 질문 조건페이지"} answer={"질문"} />
       ) : page <= questionList.length ? (
         <div className="questionLayout">
-          <div className="mbtiTitle">
-            <div>MBTI TEST</div>
-            <button onClick={() => setPage(page - 1)} className="returnButton">
-              뒤로가기
-            </button>
-            <div>{`${page} / ${questionList.length}`}</div>
-          </div>
 
           <div className="questionAnswerLayout">
             {questionList.map((val, idx) => (
@@ -1254,7 +1247,6 @@ function App() {
                           }}
                         >
                           {" "}
-                          {aval.type}
                           {aval.text}
                         </div>
                       ))}
